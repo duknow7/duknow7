@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Библиотека Книг</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="h1">Управление Библиотекой Книг</h1>
+        <form id="book-form">
+            <input type="text" id="title" placeholder="Название" required>
+            <input type="text" id="author" placeholder="Автор" required>
+            <input type="number" id="year" placeholder="Год издания" required>
+            <input type="text" id="genre" placeholder="Жанр" required>
+            <select id="status">
+                <option value="не прочитано">Не прочитано</option>
+                <option value="прочитано">Прочитано</option>
+            </select>
+            <button type="submit">Добавить книгу</button>
+        </form>
+        <select class="read" id=""><option value="Все книги">Все книги</option><option value="Прочитано">Прочитано</option><option value="Не прочитано">Не прочитано</option></select>
+        <input class="text-read" placeholder="Жанр">
+        <div id="book-list"></div>
+        <p id="book-count"></p>
+        <button id="delete-all">Удалить все книги</button>
+        <button id="refresh">Обновить страницу</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
